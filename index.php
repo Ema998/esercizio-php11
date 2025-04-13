@@ -17,14 +17,6 @@ class Car {
   function getNumTarga() {
     return $this->numTarga;
   }
-
-  public function printNumTelaio() {
-    echo $this->getNumTelaio();
-  }
-
-  public function printNumTarga() {
-    echo  $this->getNumTarga();
-  }
 }
 
 class Fiat extends Car {
@@ -36,11 +28,12 @@ class Fiat extends Car {
   }
 
   public function printInfo() {
-    echo "La mia macchina e' " . $this->name . ", con targa " . $this->printNumTarga() . " e numero di Telaio " . $this->printNumTelaio() . "<br>";   
+    echo "La mia macchina e' " . $this->name . ", con targa " . $this->getNumTarga() . " e numero di Telaio " . $this->getNumTelaio() . "<br>";   
   }
 }
 
 $myCar = new Fiat("1234", "ND 123 OJ", "Opel");
+$myCar->printInfo();
 
 
 ?>
