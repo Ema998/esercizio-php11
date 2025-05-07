@@ -6,8 +6,6 @@ class Car {
   public function __construct($numTelaio, $numTarga) {
     $this->numTelaio = $numTelaio;
     $this->numTarga = $numTarga;
-    $this->printNumTelaio();
-    $this->printNumTarga();
   }
   
   function getNumTelaio() {
